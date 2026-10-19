@@ -1,0 +1,215 @@
+h1 {
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  color:#fcfaf7
+}
+.zak p{
+  color: #f0ecec;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fbf4e6;
+  color: #2b2420;
+}
+
+   .zak{
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url('fon.png');
+    background-size: cover;
+      background-position: center;
+   }
+
+
+         header {
+          align-items: center;
+          border-bottom: 1px solid #d6c7ae;
+           display: flex;
+          justify-content: space-between;
+           background-image: url('zaza.png');
+           background-size: cover;
+           padding: 20px 40px;
+          }
+
+          header .logo,
+header nav a {
+  color: #3b1f0e;
+  font-weight: 600;
+  text-shadow:
+    0 0 3px rgba(247, 234, 211, 1),
+    0 0 6px rgba(247, 234, 211, 1),
+    0 0 10px rgba(247, 234, 211, 0.9);
+}
+
+header nav a:hover {
+  color: #a3321a;
+}
+
+
+
+nav a {
+  text-decoration: none;
+  color: #a0392f;
+  text-shadow: 0 1px 0 #f3d4bb;
+  margin-left: 35px;
+  font-weight: bold;
+}
+
+.logo a{
+  text-decoration: none;
+  color: #2b2420;
+  text-shadow: 0 1px 0 #F4E7D2;
+  font-family: 'arial black', serif;
+  font-size: 20px;
+}
+
+label{
+  align-items: center;
+  background-color: #fcfaf7;
+  border: 1.5px solid #e2d6c3;
+  border-radius: 14px;
+  padding: 14px 16px;
+  cursor: pointer;
+  
+}
+
+.dostavka{
+padding: 44px 20px;
+text-align: center;
+}
+
+.hidden{display:none}
+
+.tile{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn{
+  background-color: #d9822b;
+  color: #fcfaf7;
+  padding: 12px 28px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.blud {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#akcii, #kontakt {
+  background-color: #f3e8d3;
+  text-align: center;
+  padding: 44px 20px;
+}
+.card{
+  flex: 1;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(43,36,32,0.10);
+  transition: 0.2s;
+}
+.card a{
+  text-decoration: none;
+  color:#a17645
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.cards{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 12px 16px;
+  border: 1.5px solid #e2d6c3;
+  border-radius: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+footer {
+  background-image: url('za.png');
+  background-size: cover;
+  color: #141414;
+  text-align: center;
+  padding: 22px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+footer a{
+  text-decoration: none;
+  color: #3b1f0e;
+  font-weight: 600;
+  text-shadow:
+    0 0 3px rgba(247, 234, 211, 1),
+    0 0 6px rgba(247, 234, 211, 1),
+    0 0 10px rgba(247, 234, 211, 0.9);
+}
+
+.wrap{
+  max-width: 9000px;
+  margin: 0 auto;
+}
+
+.text-menu{
+  margin-left: 10%;
+}
+
+.bludday {
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+/* меню*/
+
+.dishes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.dishes img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.price {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #b3392f;
+}
+
+
+button{
+     
+     padding-top: 20px;
+    border: none; 
+  padding: 8px 18px;
+    color: rgb(11, 4, 4);
+    cursor: pointer;
+    font-size: 35px;
+   transition: background-color 0.3s;
+    border-radius: 10px;
+  box-shadow:none;
+}
+
+button:hover{
+  background-color: #ffc400;
+   transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
