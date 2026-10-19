@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>У Ашота</title>
+
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+   <header>
+    <section class="logo">
+        <div class="wrap">
+    <div><a href="index.html" >Кафе у Ашота </a> </div>
+</div>
+</section>
+
+ <nav>
+    <a href="menu.html">Меню</a>
+    <a href="bron.html">Бронь столика</a>
+    <a href="index.html#akcii">Акции кафе</a>
+     <a href="login.html" class="btn-login">Вход/регистрация</a>
+</nav>
+</header>
+
+<section class="zak">
+    <div class="wrap">
+<h1>Домашняя кавказская кухня!</h1>
+<p>Горячие блюда с доставкой по Кемерово </p>
+    
+      <a href="menu.html" class="btn">Заказать</a>
+
+</div>
+</section>
+
+<section class="dostavka">
+    <div class="wrap">
+    <h2>Как получить заказ?</h2>
+<div class="tile">
+
+     <label><input type="radio" name="dos" value="dost"> Доставка</label>
+   
+    
+      <label><input type="radio" name="dos" value="sam"> Самовывоз</label>
+    
+</div>
+
+<div id="dost" class="hidden">
+    
+  <p>Адрес доставки</p>
+  <input type="text" name="address" placeholder="Улица, дом, квартира">
+</div> 
+
+<div id="sam" class="hidden">
+  <p>Заберите заказ в нашем кафе:</p>
+  <p>проспект Шахтёров 52</p>
+  <p>Институтская улица 26а</p>
+</div>
+</div>
+     </section>
+
+     <section id="akcii">
+<div class="wrap">
+        <h2>Акции кафе</h2>
+
+        <div class="cards">
+            <div class="card">
+
+       <h3> <a href="dish.html">Блюдо дня</a></h3>
+Скидка действует 24 часа.
+            </div>
+
+            <div class="card">
+<h3>Скидка на самовывоз</h3>Скидка зависит от суммы заказа
+</div>
+
+<div class="card">
+<h3>Кавказское гостеприимство</h3>Заказывайте любимые блюда снова и получайте скидку 15% на следующий заказ от 1 500 ₽.
+</div>
+        </div>
+    </div>
+     </section>
+     
+     <section id="kontakt">
+        <div class="wrap">
+        <h2>Контакты</h2>
+        <p>8-800-535-35-35</p>
+       <p> Кемерово, проспект Шахтёров 52 и Институтская улица 26а</p>
+    </div>
+     </section>
+
+<footer>
+    
+    <p>© 2026 Кафе «У Ашота»</p>
+    <h3><a href="kontakt.html">Обратная связь</a></h3>
+    
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
