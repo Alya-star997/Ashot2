@@ -1,9 +1,56 @@
-<section class="blud">
-    <h2>Блюдо дня</h2>
-    <img src="bludday.png" alt="Блюдо дня" class="bludday"> 
- <form>
-    <p>Предложить блюдо дня</p>
-    <textarea name="Bludday" rows="4" cols="50"></textarea>
-    <button name="Predl">Предложить!</button>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блюдо дня</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">Кафе у Ашота</a>
+  </div>
+
+  <nav>
+    <a href="menu.html">Меню</a>
+    <a href="bron.html">Бронь столика</a>
+    <a href="index.html#akcii">Акции кафе</a>
+    <a href="login.html" class="btn-login">Вход/регистрация</a>
+  </nav>
+</header>
+
+<main>
+    
+  <section class="blud">
+
+    <div class="wrap">
+      <h2>Блюдо дня</h2>
+      <a href="menu.html"><img src="bludday.png" alt="Блюдо дня: скидка 20% на 24 часа" class="bludday"></a>
+      <h2>Выберите блюдо, которое хотите видеть блюдом дня. Предложенное блюдо получает скидку 20% на 24 часа! Кликай на банер!</h2>
+     <p id="dod" class="message ok"></p>
+<form id="dish-form">
+  <label for="dish-name">Какое блюдо предложить?</label>
+  <input type="text" id="dish-name" name="dish">
+  <p><button type="submit" class="btn">Предложить</button></p>
+  <p id="dish-msg" class="message" role="status"></p>
 </form>
-</section>
+      
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Кафе «У Ашота»</p>
+  <h3><a href="kontakt.html">Обратная связь</a></h3>
+</footer>
+<script src="js/app.js"></script>
+<script src="js/dish.js"></script>
+</body>
+</html>

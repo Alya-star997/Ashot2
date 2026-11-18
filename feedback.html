@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обратная связь</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">Кафе у Ашота</a>
+  </div>
+  <nav>
+    <a href="menu.html">Меню</a>
+    <a href="bron.html">Бронь столика</a>
+    <a href="index.html#akcii">Акции кафе</a>
+    <a href="login.html" class="btn-login">Вход/регистрация</a>
+  </nav>
+</header>
+
+<main>
+  <section class="panel">
+    <h3>Обратная связь</h3>
+    <p class="hint">Напишите вопрос или пожелание, администратор ответит здесь же. Телефон: 8-800-535-35-35.</p>
+    <form id="fb-form">
+      <label class="plain">Имя
+        <input type="text" id="fb-name">
+      </label>
+      <label class="plain">Сообщение
+        <textarea id="fb-text" rows="4"></textarea>
+      </label>
+      <p class="form-error" id="fb-error" role="alert"></p>
+      <button type="submit" class="main-btn">Отправить</button>
+    </form>
+  </section>
+
+  <section class="panel" id="fb-mine">
+    <h3>Мои обращения</h3>
+    <div id="fb-list"></div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Кафе «У Ашота»</p>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+  const me = currentUser();
+  const nameField = document.getElementById('fb-name');
+  const textField = document.getElementById('fb-text');
+  const error = document.getElementById('fb-error');
+  const list = document.getElementById('fb-list');
+
+  if (me) {
+    nameField.value = me.name;
+  }
+  document.getElementById('fb-mine').classList.toggle('hidden', !me);
+
+  function add(tag, className, text, parent) {
+    const node = document.createElement(tag);
+    node.className = className;
+    node.textContent = text;
+    parent.appendChild(node);
+    return node;
+  }
+
+  function renderList() {
+    list.innerHTML = '';
+    const mine = me ? store.get('messages', []).filter(function (m) { return m.phone === me.phone; }).reverse() : [];
+    if (mine.length === 0) {
+      add('p', 'hint', 'Обращений пока нет.', list);
+    }
+    mine.forEach(function (m) {
+      const card = add('div', 'order', '', list);
+      add('strong', '', m.date, card);
+      add('p', '', m.text, card);
+      add('p', 'reply', m.reply ? 'Ответ кафе: ' + m.reply : 'Ответа пока нет.', card);
+    });
+  }
+
+  document.getElementById('fb-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const name = nameField.value.trim();
+    const text = textField.value.trim();
+    if (name.length < 2 || text.length < 5) {
+      error.textContent = 'Укажите имя и сообщение (не короче 5 символов).';
+      return;
+    }
+    const messages = store.get('messages', []);
+    messages.push({ id: Date.now(), phone: me ? me.phone : null, name: name, text: text, date: new Date().toLocaleString('ru-RU'), reply: '' });
+    store.set('messages', messages);
+    error.textContent = '';
+    textField.value = '';
+    toast('Сообщение отправлено');
+    renderList();
+  });
+
+  renderList();
+</script>
+</body>
+</html>

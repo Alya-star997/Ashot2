@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админка</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">Кафе у Ашота</a>
+  </div>
+  <nav>
+    <a href="menu.html">Меню</a>
+    <a href="bron.html">Бронь столика</a>
+    <a href="profile.html" class="btn-login">Профиль</a>
+  </nav>
+</header>
+
+<main class="admin-wrap">
+  <section class="panel"><h3>Статистика</h3><div id="a-stats" class="stats"></div></section>
+  <div class="stats" id="a-stats"></div>
+  <section class="panel"><h3>Блюдо дня</h3><div id="a-dish"></div></section>
+  <section class="panel"><h3>Предложения блюда дня</h3><div id="a-suggest"></div></section>
+  <section class="panel"><h3>Заказы</h3><div id="a-orders"></div></section>
+  <section class="panel"><h3>Брони</h3><div id="a-bookings"></div></section>
+  <section class="panel"><h3>Обращения</h3><div id="a-messages"></div></section>
+</main>
+
+<footer>
+  <p>© 2026 Кафе «У Ашота»</p>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

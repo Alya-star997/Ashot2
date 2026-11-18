@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход / регистрация</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">Кафе у Ашота</a>
+  </div>
+  <nav>
+    <a href="menu.html">Меню</a>
+    <a href="bron.html">Бронь столика</a>
+    <a href="index.html#akcii">Акции кафе</a>
+    <a href="login.html" class="btn-login">Вход/регистрация</a>
+  </nav>
+</header>
+
+<main>
+  <section class="auth">
+    <h2>Добро пожаловать</h2>
+    <p class="hint center">Войдите, чтобы заказывать, бронировать и копить бонусы.</p>
+
+    <div class="tabs" role="tablist">
+      <button type="button" class="tab-btn active" id="tab-login" role="tab">Вход</button>
+      <button type="button" class="tab-btn" id="tab-reg" role="tab">Регистрация</button>
+    </div>
+
+    <form id="auth-form" novalidate>
+      <label class="plain hidden" id="name-box">Имя
+        <input type="text" id="a-name" autocomplete="name">
+      </label>
+      <label class="plain">Телефон
+        <input type="tel" id="a-phone" placeholder="+7 999 123-45-67" autocomplete="tel">
+      </label>
+      <label class="plain">Пароль
+        <input type="password" id="a-pass" placeholder="Не короче 6 символов" autocomplete="current-password">
+      </label>
+      <p class="form-error" id="a-msg" role="alert"></p>
+      <button type="submit" class="main-btn" id="a-submit">Войти</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Кафе «У Ашота»</p>
+  <h3><a href="feedback.html">Обратная связь</a></h3>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

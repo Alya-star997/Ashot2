@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/pages.css">
+  
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">Кафе у Ашота</a>
+  </div>
+
+  <nav>
+    <a href="menu.html">Меню</a>
+    <a href="bron.html">Бронь столика</a>
+    <a href="index.html#akcii">Акции кафе</a>
+    <a href="profile.html" class="btn-login">Профиль</a>
+  </nav>
+</header>
+
+<main class="profile-grid">
+  <div class="col">
+    <section class="panel me">
+      <div class="me-cover"></div>
+      <div class="avatar" id="avatar"></div>
+      <h3 id="user-name"></h3>
+      <p class="hint" id="user-phone"></p>
+      <p class="bonus-pill" id="bonus"></p>
+      <div class="me-actions">
+        <a href="admin.html" class="btn hidden" id="admin-link">Админка</a>
+        <button type="button" class="link-btn" id="logout">Выйти</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h3>Настройки</h3>
+      <form id="settings-form">
+        <label class="plain">Имя
+          <input type="text" id="set-name">
+        </label>
+        <label class="plain">Новый пароль (от 6 символов, можно оставить пустым)
+          <input type="password" id="set-pass" autocomplete="new-password">
+        </label>
+        <p class="form-error" id="set-msg" role="status"></p>
+        <button type="submit" class="main-btn">Сохранить</button>
+      </form>
+    </section>
+  </div>
+
+  <div class="col">
+    <section class="panel">
+      <h3>Корзина</h3>
+      <div id="cart"></div>
+    </section>
+
+    <section class="panel" id="checkout">
+      <h3>Оформление заказа</h3>
+      <div class="tile">
+        <label><input type="radio" name="way" value="delivery" checked> Доставка</label>
+        <label><input type="radio" name="way" value="pickup"> Самовывоз</label>
+      </div>
+      <div id="addr-box">
+        <label class="plain">Адрес доставки
+          <input type="text" id="address" placeholder="Улица, дом, квартира">
+        </label>
+      </div>
+      <div id="pick-box" class="hidden">
+        <label class="plain">Где забрать
+          <select id="branch">
+            <option>проспект Шахтёров 52</option>
+            <option>Институтская улица 26а</option>
+          </select>
+        </label>
+      </div>
+      <label class="plain"><input type="checkbox" id="use-bonus"> Оплатить бонусами <span id="bonus-hint" class="hint"></span></label>
+      <p class="form-error" id="order-error" role="alert"></p>
+      <button type="button" class="main-btn" id="order-btn">Оформить заказ</button>
+    </section>
+
+    <section class="panel">
+      <h3>Мои заказы</h3>
+      <div id="orders"></div>
+    </section>
+
+    <section class="panel">
+      <h3>Мои брони</h3>
+      <div id="my-bookings"></div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Кафе «У Ашота»</p>
+  <h3><a href="feedback.html">Обратная связь</a></h3>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>
