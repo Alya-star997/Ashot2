@@ -1,108 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru">
-    
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>У Ашота</title>
-
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="app.css">
-
-
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-    <section class="logo">
-        <div class="wrap">
-    <div><a href="index.html" >Кафе у Ашота </a> </div>
+    <!-- 1. Скрытый чтокбокс (переключатель) -->
+    <input type="checkbox" id="menu-toggle">
+    <!-- 2. Кнопка (гамбургер), которая открывает меню -->
+    <label for="menu-toggle" class="menu-btn">☰</label>
+<!-- 3. Само выезжающее меню -->
+    <nav class="sidebar">
+        <label for="menu-toggle" class="close-btn">✕</label> <!-- Кнопка закрытия -->
+        <a href="#" onclick="alert('Вы уже находитесь тут'); return false;">Главная</a>
+        <a href="history.html">Рассказы</a>
+        <a href="personaji.html">Персонажи</a>
+        <a href="obomne.html">Обо мне</a>
+        <!-- Кнопка переключения темы -->
+<label for="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()">🌓 Сменить тему</label>
+    </nav>
+    <div class="header-group">
+    <h1>Desta</h1>
+    <img src="desta_glavnaya.png" id="desta_glavnaya" class="glav_photo">
 </div>
-</section>
+    <img src="lui_glav.png" id="lui_glav" class="glav_photo">
+<p>Доброго времени суток, читателям и всем, кто просто заглянул сюда! Этот сайт создан специально для публикации рассказов автора Desta по мотивам Gacha. Подробнее об авторе можно узнать в разделе 
+   <a href="obomne.html">Обо мне</a> по ссылке. В этом же разделе можно связаться со мной по моему телеграм-канал (те кто будет просто так ни за что хейтит сразу в чс)
+</p>
+<p>Чтобы прочитать рассказы нажмите на раздел <a href="history.html">Рассказы</a> . После прочтения просьба запомнить номер страницы или главы, так как разраб(тоже  Desta) не додумалась еще как сделать сохраненку(ну или я хз работает ли)(Опытные программисты найдитесь пожалуйста..)</p>
+<p>Главные и второстепенные персонажи представлены в разделе <a href="personaji.html">Персонажи</a>. Там можно узнать их истории, увлечения и то, в каких рассказах они появляются.</p>
 
- <nav>
-    <a href="menu.html">Меню</a>
-    <a href="bron.html">Бронь столика</a>
-    <a href="index.html#akcii">Акции кафе</a>
-     <a href="login.html" class="btn-login">Вход/регистрация</a>
-</nav>
-</header>
 
-<section class="zak">
-    <div class="wrap">
-<h1>Домашняя кавказская кухня!</h1>
-<p>Горячие блюда с доставкой по Кемерово </p>
+
+<div class="feedback-container">
+    <h3>Оцените сайт</h3>
+    <h4>Включите VPN! Иначто выдаст ошибку</h4>
     
-      <a href="menu.html" class="btn">Заказать</a>
-
-</div>
-</section>
-
-<section class="dostavka">
-    <div class="wrap">
-    <h2>Как получить заказ?</h2>
-<div class="tile">
-
-     <label><input type="radio" name="dos" value="dost"> Доставка</label>
-   
-    
-      <label><input type="radio" name="dos" value="sam"> Самовывоз</label>
-    
-</div>
-
-<div id="dost" class="hidden">
-    
-  <p>Адрес доставки</p>
-  <input type="text" name="address" placeholder="Улица, дом, квартира">
-</div> 
-
-<div id="sam" class="hidden">
-  <p>Заберите заказ в нашем кафе:</p>
-  <p>проспект Шахтёров 52</p>
-  <p>Институтская улица 26а</p>
-</div>
-</div>
-     </section>
-
-     <section id="akcii">
-<div class="wrap">
-        <h2>Акции кафе</h2>
-
-        <div class="cards">
-            <div class="card">
-
-       <h3> <a href="dish.html">Блюдо дня</a></h3>
-Скидка действует 24 часа.
-            </div>
-
-            <div class="card">
-<h3>Скидка на самовывоз</h3>Скидка зависит от суммы заказа
-</div>
-
-<div class="card">
-<h3>Кавказское гостеприимство</h3>Заказывайте любимые блюда снова и получайте скидку 15% на следующий заказ от 1 500 ₽.
-</div>
+    <form id="tgForm">
+        <div id="star-rating" class="star-rating">
+            <span data-value="5">★</span>
+            <span data-value="4">★</span>
+            <span data-value="3">★</span>
+            <span data-value="2">★</span>
+            <span data-value="1">★</span>
         </div>
-    </div>
-     </section>
-     
-     <section id="kontakt">
-        <div class="wrap">
-        <h2>Контакты</h2>
-        <p>8-800-535-35-35</p>
-       <p> Кемерово, проспект Шахтёров 52 и Институтская улица 26а</p>
-    </div>
-     </section>
+        <input type="hidden" id="ratingValue" value="0">
+                <div class="input-group" style="text-align: center; margin-bottom: 20px;">
+            <p style="font-size: 20px; color: #ff3333; margin-bottom: 10px; text-align: center; margin-right: 5%;">
+                ! Чтобы получить ответ от бота, сначала нажмите кнопку ниже, а затем отправьте отзыв!
+            </p>
+            <!-- ЗАМЕНИ Sayt_ocenka_bot НА ИМЯ СВОЕГО БОТА -->
+            <a href="https://t.me/Sayt_ocenka_bot" target="_blank" style="background-color: #ec391a; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 0 10px rgba(235, 13, 13, 0.5);">
+                ✈️ Открыть бота и нажать /start
+            </a>
+        </div>
+        <div class="input-group">
+            <label for="userName">Как к вам обращаться?</label>
+            <input type="text" id="userName" placeholder="Ваше имя" required>
+        </div>
 
-<footer>
-    
-    <p>© 2026 Кафе «У Ашота»</p>
-    <h3><a href="feedback.html">Обратная связь</a></h3>
-    
-</footer>
-<script src="app.js"></script>
-<script src="main.js"></script>
+        <div class="input-group">
+            <label for="userComment">Что вы думаете о сайте?</label>
+            <textarea id="userComment" rows="4" placeholder="Напишите ваш отзыв..." required></textarea>
+        </div>
+         <div class="input-group">
+            <label for="tgUsername">Ваш Telegram (чтобы я могла ответить):</label>
+            <input type="text" id="tgUsername" placeholder="@username (не обязательно)">
+        </div>
+
+        <button type="submit" id="submitBtn">Отправить отзыв</button>
+        <!-- Вот сюда скрипт будет выводить ошибки, если что-то пойдет не так -->
+        <p id="formStatus" style="font-weight: bold; text-align: center; margin-top: 15px;"></p>
+    </form>
+</div>
+
+<script src="index.js"></script>
+<script src="theme.js"></script>
 </body>
+
+
+
+
+
+
 </html>

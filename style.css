@@ -1,568 +1,1589 @@
-h1 {
-  font-size: 36px;
-  font-family: 'Playfair Display', serif;
-  color:#fcfaf7
-}
-.menu h1 { color: #2b2420; font-family: 'Arial', serif; }
-
-.zak p{
-  color: #f0ecec;
-}
-
-body {
-  font-family: 'Nunito', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fbf4e6;
-  color: #2b2420;
-}
-
-   .zak{
+.theme-toggle-btn {
+    background-color: var(--bg-color); 
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+    padding: 10px;
+    margin: 10px 20px;
     text-align: center;
-    padding: 60px 20px;
-    background-image: url('fon.png');
-    background-size: cover;
-      background-position: center;
-   }
-
-
-         header {
-          align-items: center;
-          border-bottom: 1px solid #d6c7ae;
-           display: flex;
-          justify-content: space-between;
-           background-image: url('zaza.png');
-           background-size: cover;
-           padding: 20px 40px;
-          }
-
-          header .logo,
-header nav a {
-  color: #3b1f0e;
-  font-weight: 600;
-  text-shadow:
-    0 0 3px rgba(247, 234, 211, 1),
-    0 0 6px rgba(247, 234, 211, 1),
-    0 0 10px rgba(247, 234, 211, 0.9);
-}
-
-header nav a:hover {
-  color: #a3321a;
-}
-
-
-
-nav a {
-  text-decoration: none;
-  color: #a0392f;
-  text-shadow: 0 1px 0 #f3d4bb;
-  margin-left: 35px;
-  font-weight: bold;
-}
-
-.logo a{
-  text-decoration: none;
-  color: #2b2420;
-  text-shadow: 0 1px 0 #F4E7D2;
-  font-family: 'arial black', serif;
-  font-size: 20px;
-}
-
-label{
-  align-items: center;
-  background-color: #fcfaf7;
-  border: 1.5px solid #e2d6c3;
-  border-radius: 14px;
-  padding: 14px 16px;
-  cursor: pointer;
-  
-}
-
-.dostavka{
-padding: 44px 20px;
-text-align: center;
-}
-
-.hidden{display:none}
-
-.tile{
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-}
-
-
-.btn{
-  background-color: #d9822b;
-  color: #fcfaf7;
-  padding: 12px 28px;
-  border-radius: 10px;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.blud {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-#akcii, #kontakt {
-  background-color: #f3e8d3;
-  text-align: center;
-  padding: 44px 20px;
-}
-.card{
-  flex: 1;
-  text-decoration: none;
-  background-color: #ffffff;
-  padding: 16px;
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(43,36,32,0.10);
-  transition: 0.2s;
-}
-.card a{
-  text-decoration: none;
-  color:#a17645
-}
-.card:hover {
-  transform: translateY(-4px);
-}
-.cards{
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-input[type="text"] {
-  width: 300px;
-  padding: 12px 16px;
-  border: 1.5px solid #e2d6c3;
-  border-radius: 10px;
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
-}
-
-footer {
-  background-image: url('za.png');
-  background-size: cover;
-  color: #141414;
-  text-align: center;
-  padding: 22px;
-  margin-top: 40px;
-  font-size: 14px;
-}
-footer a{
-  text-decoration: none;
-  color: #3b1f0e;
-  font-weight: 600;
-  text-shadow:
-    0 0 3px rgba(247, 234, 211, 1),
-    0 0 6px rgba(247, 234, 211, 1),
-    0 0 10px rgba(247, 234, 211, 0.9);
-}
-
-.wrap{
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.menu .wrap {
-  max-width: 1500px;
-  padding: 0 30px;
-}
-
-.bludday {
-  max-width: 600px;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-/* меню*/
-
-.dishes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 28px;
-}
-
-.dishes .card {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-.dishes .card h3 {
-  margin: 12px 0 10px;
-  font-size: 26px;
-}
-
-
-/* описание занимает свободное место, поэтому цена и кнопка прижимаются к низу */
-.dishes .card > p:not(.price) {
-  margin: 0 0 14px;
-  font-size: 18px;
-  line-height: 1.4;
-  flex-grow: 1;
-}
-
-.dishes img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.price {
-  display: block;
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #b3392f;
-}
-
-button{
-     
-     padding-top: 20px;
-    border: none; 
-  padding: 8px 18px;
-  background-color: #d9822b;
-    color: rgb(11, 4, 4);
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+/* Цвета для ТЕМНОЙ темы (по умолчанию) */
+:root {
+    --bg-color: #000000;
+    --text-color: #faebd7; /* antiquewhite */
+    --accent-color: #ff3333; /* Красный */
+    --card-bg: #0a0a0a;
+    --border-color: #ff3333;
+}
+
+/* Цвета для СВЕТЛОЙ темы */
+body.light-theme {
+    --bg-color: #f4f4f4;
+    --text-color: #222222; /* Должен быть темным! */
+    --accent-color: #cc0000; 
+    --card-bg: #ffffff;
+    --border-color: #cc0000;
+}
+
+/* Применяем цвета */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+    overflow-x: hidden;
+}
+h2{
+    color: aliceblue;
+}
+.top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;               /* Расстояние между девушкой и словом Desta */
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-left: 150px;     /* Отступ от меню слева */
+}
+
+/* Фиксируем красную девушку на месте */
+.img-desta {
+    width: 300px;            /* Размер */
+    height: auto !important; /* Запрещаем сплющивать */
+    position: static !important; /* Убиваем старые привязки */
+    margin: 0 !important;
+    filter: drop-shadow(0 0 15px #ff3333);
+}
+.main-body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;     /* Парень будет ровно по центру текста */
+    gap: 50px;               /* Расстояние между текстом и парнем */
+    max-width: 1300px;
+    margin: 0 auto;          /* Центрируем весь блок */
+    padding-left: 150px;     /* Отступ от меню */
+}
+
+/* Текст */
+.text-box {
+    max-width: 80px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.text-box p {
+    text-indent: 40px;       /* Красная строка */
+    margin-bottom: 200px;
+}
+
+/* Фиксируем желтого парня */
+.img-lui {
+    right: 2%; 
+    width: 200px;            /* Размер парня */
+    height: auto ; /* ГЛАВНОЕ: он больше не будет сплющенным */
+    object-fit: contain;     /* Сохраняет пропорции */
+    position: static ;
+    margin: 0 ;
+     top: 50%;
+    filter: drop-shadow(0 0 15px #ff3333);
+}
+@media (max-width: 900px) {
+    .top-header, .main-body {
+        flex-direction: column; /* На телефоне всё друг под другом */
+        padding-left: 0;        /* Убираем отступы меню */
+        text-align: center;
+    }
+    .img-desta, .img-lui {
+        width: 200px;           /* Уменьшаем картинки на телефоне */
+    }
+    .text-box p {
+        text-indent: 0;         /* Убираем красную строку для ровного текста */
+    }
+}
+a{
+      color: var(--accent-color);
+    color: #ff4747;
+    font-size: 25px;
+    text-shadow: 3px 3px 5px red;
+}
+a:hover{
+    color: rgb(255, 0, 0);
+    font-size: 28px;
+}
+
+h1 {
+    font-size: clamp(35px, 8vw, 90px);
+    width: 100%;
+    font-family: 'Lucida Calligraphy', cursive, sans-serif; /* добавил запасные шрифты */
+    text-align: center;
+    color: #ff1a1a; /* Яркий красный */
+    
+    /* Многослойное свечение */
+    text-shadow: 
+        0 0 5px #000000,
+        0 0 10px #ff0000,
+        0 0 20px #ff0000,
+        0 0 40px #ff0000,
+        0 0 80px #ff0000;
+}
+#desta_glavnaya{
+     justify-content: flex-start;
+      padding-left: -100%;
+    position: relative; 
+    margin: 2px auto;
+    width: 25%;
+    max-width: 350px;
+    height: 30%;
+    max-height: 100%;
+    margin-top: -200px;
+    margin-left: 35px;
+}
+#vika_pers{
+    position: relative;
+    left: -1%;
+    float: left;
+    width: 30%;
+    max-width: 100%;
+    height: 30%;
+    max-height: 100%;
+    margin-top: -2%;
+    margin-left: -5%;
+}
+.glav_photo{
+filter: drop-shadow(0 0 10px rgb(163, 4, 4));
+}
+#lui_glav{
+     position: absolute; 
+     justify-content: flex-start;
+     padding-right: -100px;
+    right: -5%;   
+    margin-top: -20%;    /* Отступ от правого края экрана */
+    float: right;        /* Прижимает картинку к правому краю */
+    margin-right: 0;
+    width: 100%;
+    max-width: 25vw;
+    height: auto;
+    max-height: 100%;
+}
+p {
+    margin-right: 0;
+    text-indent: 40px;
+    text-align: center;
+    margin-left: 5%;
+    /* БЫЛО: color: antiquewhite; */
+    color: var(--text-color); /* СТАЛО */
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#menu-toggle {
+    display: none; 
+}
+
+/* Кнопка "Гамбургер" (☰) */
+.menu-btn {
+    position: fixed;      /* Всегда висит на экране */
+    top: 20px;            /* Отступ сверху */
+    left: 20px;           /* Отступ слева */
     font-size: 35px;
-   transition: background-color 0.3s;
+    color: #ff3333;       /* Красный цвет */
+    cursor: pointer;
+    z-index: 1000;        /* Поверх всех остальных элементов */
+    text-shadow: 0 0 10px red; /* Свечение */
+    transition: 0.3s;
+}
+.menu-btn:hover {
+    color: white;
+    text-shadow: 0 0 20px rgb(250, 21, 21);
+}
+
+/* Само выезжающее меню (Сайдбар) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;         
+    height: 100vh;        
+    
+    /* ИЗМЕНЕНО: Привязываем к переменным */
+    background-color: var(--card-bg); 
+    border-right: 2px solid var(--border-color); 
+    
+    /* Немного уменьшим красную тень, чтобы на белом фоне она не слепила */
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2); 
+    
+    display: flex;
+    flex-direction: column; 
+    padding-top: 80px;    
+    gap: 20px;            
+    
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out, background-color 0.3s; /* Добавили плавность цвета */
+    z-index: 1000;         
+}
+/* Ссылки внутри меню */
+/* Ссылки внутри меню */
+.sidebar a {
+    /* Используем переменную цвета текста */
+    color: var(--text-color); 
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    padding: 10px 30px;
+    transition: 0.3s;
+    /* Убираем постоянное свечение, если оно было */
+    text-shadow: none; 
+}
+
+/* Подсветка ссылок при наведении */
+.sidebar a:hover {
+    color: var(--accent-color); /* Становится красным при наведении */
+    
+    /* Свечение делаем только при наведении, и оно теперь зависит от темы */
+    /* В темной теме будет яркое, в светлой - более приглушенное */
+    text-shadow: 0 0 8px var(--accent-color); 
+    
+    padding-left: 40px; 
+}
+/* Кнопка закрытия (крестик) внутри меню */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    color: var(--accent-color); /* ИЗМЕНЕНО: Крестик теперь меняет цвет */
+    cursor: pointer;
+}
+/* Если чекбокс с id="menu-toggle" нажат (checked), то соседний .sidebar выезжает на 0 */
+#menu-toggle:checked ~ .sidebar {
+    transform: translateX(0);
+}
+
+/* Когда меню открыто, гамбургер можно скрыть (чтобы не мешал) */
+#menu-toggle:checked ~ .menu-btn {
+    opacity: 0;
+    pointer-events: none;
+}
+.characters-cards {
+    position: absolute;      
+    justify-content: center; /* Центрирует карточки внутри контейнера */
+    width: 600px;  
+    /* Двигай этими цифрами, чтобы вся группа (заголовок + карточки) встала идеально */
+    top: 250px;              /* Если заголовок поднял карточки слишком высоко, увеличь это число */
+    left: 250px;             /* Если наезжает на девушку, увеличь это число (например, до 550px) */
+    bottom: 100px;  
+ 
+   
+    display: flex;           
+    flex-direction: row;     
+    flex-wrap: wrap;         /* <--- ГЛАВНАЯ МАГИЯ: разрешает переносить элементы на новую строку */
+    gap: 20px;               
+    z-index: 999;             
+    width: fit-content;      /* Контейнер будет ровно по размеру карточек, не больше */
+}
+
+/* Стили самой карточки оставляем без изменений */
+.card {
+    background-color: #0a0a0a;
+    border: 2px solid #ff3333;
     border-radius: 10px;
-  box-shadow:none;
+    padding: 20px;
+    width: 200px;            
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
 }
 
-button:hover{
-  background-color: #ffc400;
-   transform: scale(1.1);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+.card:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    transform: translateY(-5px); /* Чуть подпрыгивают при наведении */
+}
+@media (max-width: 900px) {
+    .characters-cards {
+        position: relative; /* На телефоне ставим их обратно в поток */
+        top: 0;
+         padding: 20px 15px; /* 15px по бокам, чтобы карточки не касались краев */
+        margin-top: 60px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        flex-direction: column; /* На телефоне лучше столбиком */
+        margin: 50px auto;
+    }
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 5000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
-/* бронь столика */
-.bron { padding: 44px 20px; }
-.bron h2 { text-align: center; color: #2b2420; }
-
-.notice {
-  max-width: 560px;
-  margin: 0 auto 20px;
-  padding: 12px 16px;
-  background: #f3e8d3;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 14px;
-}
-.notice a { color: #b3392f; font-weight: bold; }
-
-.booking-form {
-  max-width: 560px;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(43,36,32,0.10);
+.modal-content {
+    background-color: #111;
+    margin: 5% auto; 
+    padding: 30px;
+    border: 2px solid #ff3333;
+    border-radius: 15px;
+    
+    /* Ширина окна */
+    width: 80%;
+    max-width: 600px; 
+    
+    /* Высота окна: если контента много, появится скролл */
+    max-height: 85vh; 
+    overflow-y: auto; 
+    
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.4);
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 16px;
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #ff3333;
+    font-size: 30px;
+    cursor: pointer;
 }
-.field { margin-bottom: 18px; }
-.field label, .tables legend {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
-  color: #2b2420;
+/* Стили для заголовка над карточками */
+.cards-title {
+      text-align: center; 
+    width: 100%;             /* Заставляет заголовок занять всю верхнюю строку */
+    text-align: center;        /* Выравнивает заголовок по левому краю (ровно над первой карточкой) */
+    color: #ff3333;          
+    font-size: 20px;         
+    margin-top: 5%;
+    margin-bottom: 5px;      /* Небольшой отступ от заголовка до карточек */
+    text-shadow: 0 0 10px red; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+.card img {
+    width: 100%;           /* Картинка занимает всю ширину карточки (но не больше) */
+    height: 200px;         /* Задаем одинаковую высоту для всех картинок, чтобы карточки были ровными */
+    object-fit: cover;     /* Картинка заполняет блок, обрезая лишнее по краям (не сплющивается) */
+    border-radius: 5px;    /* Слегка скругляем углы у картинки */
+    margin-top: 10px;      /* Отступ от имени персонажа до картинки */
+    display: block;        /* Убирает лишний пустой отступ снизу */
+}
+#modal-img {
+    max-width: 100%;      /* Картинка не будет шире самого окна */
+    max-height: 400px;    /* Ограничиваем высоту картинки (можешь поменять число) */
+    object-fit: contain;  /* Картинка вписывается полностью, не искажаясь и не обрезаясь */
+    display: block;
+    margin: 20px auto;    /* Центрируем картинку по горизонтали */
+    border-radius: 10px;  /* Красиво скругляем углы */
 }
 
-.booking-form input:not([type="radio"]),
-.booking-form select,
-.booking-form textarea {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  border: 1.5px solid #e2d6c3;
-  border-radius: 10px;
-  font-family: inherit;
-  font-size: 16px;
-  background: #ffffff;
-  color: #2b2420;
+/* Настройки для текста описания */
+#modal-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;     /* Текст читать слева направо удобнее */
+    margin-top: 15px;
 }
-.booking-form input:focus,
-.booking-form select:focus,
-.booking-form textarea:focus {
-  outline: none;
-  border-color: #b3392f;
+/* Специальное окно для галереи (шире, чем обычное) */
+.gallery-content {
+    max-width: 800px !important; /* Делаем окно шире */
+    width: 90% !important;
 }
 
-.tables { border: 0; padding: 0; margin: 0 0 18px; }
-.table-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
-}
-.table-opt {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px;
-  border: 1.5px solid #e2d6c3;
-  border-radius: 12px;
-  background: #fcfaf7;
-  cursor: pointer;
-}
-.table-opt input { width: auto; margin: 0; }
-.table-opt:has(input:checked) { border-color: #b3392f; background: #fdf1ee; }
-.table-opt:has(input:disabled) { opacity: 0.4; cursor: not-allowed; }
-
-.booking-form .btn {
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 16px;
-}
-.hint { font-size: 13px; color: #6b5d52; text-align: center; margin: 10px 0 0; }
-.message { text-align: center; font-weight: bold; margin: 12px 0 0; }
-.message.ok { color: #2f6b3a; }
-.message.error { color: #b3392f; }.hidden {
-  display: none;
+/* Сетка для фотографий */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматически ставит фото в ряд */
+    gap: 15px; /* Расстояние между фото */
+    margin-top: 20px;
 }
 
-.bron {
-  padding: 44px 20px;
+/* Настройки для картинок внутри галереи */
+.gallery-grid img {
+    width: 100%;
+    height: 150px; /* Одинаковая высота */
+    object-fit: cover; /* Чтобы не сплющивались */
+    border-radius: 8px;
+    border: 2px solid #ff3333; /* Красная рамка */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    transition: 0.3s;
 }
 
-.bron h2 {
-  text-align: center;
-  color: #2b2420;
+/* Эффект при наведении на фото в галерее */
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Фото чуть увеличивается */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); /* Свечение становится ярче */
+}
+/* Стили для фото на странице "Обо мне" */
+
+#ya1 {
+    width: 350px;         /* Размер фото (можешь поставить 300px или 500px) */
+    max-width: 90%;       /* Защита для телефонов, чтобы фото не вылезало за экран */
+    height: auto;         /* Сохраняет правильные пропорции */
+    
+    display: block;       
+    margin-left: 70px;   /* СДВИГ ВЛЕВО. 150px — это чтобы фото не налезло на меню-гамбургер. Можешь уменьшить или увеличить */
+    margin-top: 30px;     /* Отступ от заголовка "About the author" */
+    margin-bottom: 30px;  /* Отступ снизу */
+    
+    border-radius: 15px;  /* Красиво скругляет углы */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); /* Красное свечение вокруг фото (как у карточек) */
+    cursor: pointer;      /* Курсор-рука, раз на нее можно нажать */
+}
+/* --- ОБЩАЯ ОБЕРТКА (Столбиком: сначала фото, потом текст) --- */
+.gallery-wrapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    /* Центрирует фото и текст внутри */
+    gap: 40px;              
+     padding: 50px 30px; 
+    /* Фиксируем ширину блока, чтобы он не растягивался на весь экран */
+    max-width: 1400px;        
+    margin: 0 auto;         /* Автоматически центрирует блок на странице */
+    padding-top: 50px;      
+    padding-bottom: 50px;
 }
 
-.notice {
-  max-width: 560px;
-  margin: 0 auto 20px;
-  padding: 12px 16px;
-  background: #f3e8d3;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 14px;
+/* --- РЯД С ФОТОГРАФИЯМИ --- */
+.photo-row {
+    display: flex;          
+    justify-content: center; /* Фото ровно по центру */
+    gap: 20px;              
+    flex-wrap: wrap;        
+    width: 100%;
 }
 
-.notice a {
-  color: #b3392f;
-  font-weight: bold;
+/* --- САМИ ФОТОГРАФИИ --- */
+.gallery-img {
+    width: 300px;           /* Ширина одной фотографии (можешь сделать 250px или 350px) */
+    height: 400px;          /* Высота (сделает все фото одного размера) */
+    object-fit: cover;      /* Чтобы фото не плющились, а красиво обрезались */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Красное свечение */
+    transition: 0.3s;       /* Плавный эффект при наведении */
 }
 
-.booking-form {
-  max-width: 560px;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(43, 36, 32, 0.10);
+.gallery-img:hover {
+    transform: scale(1.05); /* Фото чуть увеличивается при наведении мышки */
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
 }
 
-.type-switch {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 20px;
+/* --- ТЕКСТ ПОД ФОТО --- */
+.text-below {
+    color: antiquewhite;
+    font-size: 22px;
+    line-height: 1.6;
+    
+    width: 100%;            /* Занимает всю ширину обертки (1000px) */
+      max-width: 1500px;      /* Но сам текст ограничен 800px для читаемости */
 }
 
-.type-opt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 14px 16px;
-  border: 1.5px solid #e2d6c3;
-  border-radius: 14px;
-  background: #fcfaf7;
-  cursor: pointer;
-  font-weight: bold;
-  color: #2b2420;
+.text-below p {
+    text-indent: 40px;      /* Вернул красную строку, так красивее */
+    margin-bottom: 20px;
+    text-align: justify;    /* Текст ровный с обеих сторон, как в книгах */
 }
 
-.type-opt:has(input:checked) {
-  border-color: #b3392f;
-  background: #fdf1ee;
+/* ========================================= */
+/* АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ */
+/* ========================================= */
+@media (max-width: 900px) {
+    .gallery-wrapper {
+        padding: 20px !important; /* Убираем отступы для меню */
+    }
+    
+    .photo-row {
+        justify-content: center; /* На телефоне фото по центру */
+    }
+    
+    .gallery-img {
+        width: 100%;          /* На телефоне фото занимает всю ширину */
+        max-width: 350px;
+        height: auto;         /* Высота подстраивается */
+    }
+}
+#max_history{
+      position: absolute;      /* ГЛАВНОЕ: позволяет двигать картинку куда угодно */
+    top: 3%;              /* Отступ от верхнего края (подгони под заголовок History) */
+    right: 2%;             /* Отступ от правого края экрана */
+    
+    width: 14%;            /* Размер */
+    height: auto;            /* Запрещаем сплющивать */
+    object-fit: contain;     /* Сохраняет пропорции */
+    
+    margin: 0; 
+filter: drop-shadow(0 0 15px #ff3333);
+}
+.stories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 50px auto;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 16px;
+.story-card {
+    background-color: #111;
+    border: 2px solid #ff3333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    color: white;
+    transition: 0.3s;
+    
+    /* ... */
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+    /* ... */
+
 }
 
-.field {
-  margin-bottom: 18px;
+/* Этот класс мы будем добавлять через JS, если рассказ прочитан */
+.story-card.read {
+    border-color: #00ff00; /* Зеленая рамка */
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3); /* Зеленое свечение */
 }
 
-.field label,
-.tables legend {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
-  color: #2b2420;
+.read-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff3333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.reader-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    color: antiquewhite;
+    font-size: 20px;
+    line-height: 1.8;
 }
 
-.booking-form input:not([type="radio"]),
-.booking-form select,
-.booking-form textarea {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  border: 1.5px solid #e2d6c3;
-  border-radius: 10px;
-  font-family: inherit;
-  font-size: 16px;
-  background: #ffffff;
-  color: #2b2420;
+.text-content {
+    min-height: 300px; /* Чтобы страница не прыгала, если текста мало */
+    margin-bottom: 30px;
+    text-align: justify;
 }
 
-.booking-form input:focus,
-.booking-form select:focus,
-.booking-form textarea:focus {
-  outline: none;
-  border-color: #b3392f;
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.booking-form input:focus-visible,
-.booking-form select:focus-visible,
-.booking-form textarea:focus-visible,
-.booking-form button:focus-visible {
-  outline: 3px solid #d9822b;
-  outline-offset: 2px;
+.controls button {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.booking-form .invalid {
-  border-color: #b3392f;
-  background: #fdf1ee;
+.controls button:disabled {
+    background-color: #555; /* Кнопка неактивна, если страница первая/последняя */
+    cursor: not-allowed;
 }
 
-.tables {
-  border: 0;
-  padding: 0;
-  margin: 0 0 18px;
+.finish-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #aa1c00; /* Зеленая кнопка */
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.finish-btn:hover {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #dd2a06; /* Зеленая кнопка */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-.table-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+.back-link {
+    color: #ff3333;
+}
+/* --- МЕНЮ ГЛАВ СБОКУ --- */
+.chapter-sidebar {
+    position: fixed;         /* Прибиваем к экрану */
+    right: 20px;             /* Отступ от правого края */
+    top: 50%;                /* Ставим по центру экрана */
+    transform: translateY(-50%); /* Точное центрирование */
+    
+    background-color: #111;
+    border: 2px solid #ff3333;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    z-index: 100;
+    width: 150px;
 }
 
-.table-opt {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px;
-  border: 1.5px solid #e2d6c3;
-  border-radius: 12px;
-  background: #fcfaf7;
-  cursor: pointer;
-  color: #2b2420;
+.chapter-sidebar h3 {
+    color: #ff3333;
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+h4{
+     color: #ff3333;
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.chapter-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: inherit;
+    font-size: 16px;
+    text-align: left;
 }
 
-.table-opt input {
-  width: auto;
-  margin: 0;
+.chapter-btn:hover {
+    background-color: #ff3333;
+    border-color: #ff3333;
+    color: black;
+    font-weight: bold;
 }
 
-.table-opt:has(input:checked) {
-  border-color: #b3392f;
-  background: #fdf1ee;
+/* Активная глава (которую сейчас читают) */
+.chapter-btn.active {
+    background-color: #ff3333;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 10px red;
 }
 
-.table-opt:has(input:disabled) {
-  opacity: 0.4;
-  cursor: not-allowed;
+/* ========================================= */
+/* АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ */
+/* ========================================= */
+@media (max-width: 900px) {
+    /* На телефоне меню не висит сбоку, а встает в начало рассказа */
+    .chapter-sidebar {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        margin: 0 auto 20px auto;
+        flex-direction: row; /* Кнопки в ряд */
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+}
+/* --- ИЛЛЮСТРАЦИИ В ТЕКСТЕ --- */
+/* --- ИЛЛЮСТРАЦИИ В ТЕКСТЕ --- */
+.story-img {
+    display: block;
+    width: 100%;              /* Картинка занимает всю доступную ширину... */
+    max-width: 600px;         /* ...но не больше 600 пикселей (это оптимально для чтения) */
+    height: auto;
+    margin: 30px auto;        /* Центрируем картинку по середине и добавляем отступы */
+    border-radius: 10px;
+    border: 2px solid #ff3333;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    cursor: zoom-in;
+    transition: 0.3s;
 }
 
-.booking-form .btn {
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 16px;
+.story-img:hover {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+    transform: scale(1.02);
 }
 
-.hint {
-  font-size: 13px;
-  color: #6b5d52;
-  text-align: center;
-  margin: 10px 0 0;
+/* --- ОКНО ГАЛЕРЕИ (ЛАЙТБОКС) --- */
+.gallery-modal {
+    display: none; /*    Скрыто по умолчанию */
+    position: fixed;
+    z-index: 9999; /* Поверх всего */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Почти черный фон */
+    align-items: center;
+    justify-content: center;
 }
 
-.message {
-  text-align: center;
-  font-weight: bold;
-  margin: 12px 0 0;
+/* Картинка внутри галереи */
+#gallery-main-img {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    object-fit: contain;
 }
 
-.message.ok {
-  color: #2f6b3a;
+/* Кнопка закрытия */
+.close-gallery {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #ff3333;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 10000;
+}
+.close-gallery:hover { color: white; text-shadow: 0 0 10px red; }
+
+/* Кнопки навигации (Влево/Вправо) */
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #ff3333;
+    border: 2px solid #ff3333;
+    font-size: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 10000;
+}
+.gallery-nav:hover {
+    background: #ff3333;
+    color: black;
+    box-shadow: 0 0 15px red;
+}
+.gallery-nav.prev { left: 20px; }
+.gallery-nav.next { right: 20px; }
+.image-row {
+    display: flex ;       /* Принудительно ставим в ряд */
+    flex-direction: row ; /* Запрещаем перенос в столбик */
+    justify-content: center ; 
+    align-items: center;
+    gap: 20px;                      /* Расстояние между ними */
+    margin: 30px auto;
+    width: 100%;
+}
+.image-row .story-img {
+    width: 45% ;          /* Каждая занимает 45% ширины (чтобы влезли вдвоем) */
+    max-width: 400px ;    /* Ограничитель размера */
+    margin: 0 ;           /* Убиваем старые отступы, которые ломают ряд */
 }
 
-.message.error {
-  color: #b3392f;
+/* --- ОДИНОЧНАЯ КАРТИНКА (если она не в ряду) --- */
+.text-content > .story-img {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column !important; /* На телефоне ставим друг под другом */
+    }
+    .image-row .story-img {
+        width: 100% !important;         /* На телефоне картинки на всю ширину */
+        max-width: 100% !important;
+    }
+}
+/* Контейнер для кнопок в карточке */
+.card-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Расстояние между кнопками */
+    margin-top: 15px;
 }
 
-/*Отмена брони */
-
-.my-bookings-section {
-  max-width: 560px;
-  margin: 30px auto 0;
+/* Стили для кнопки Информация */
+.info-btn {
+    background-color: transparent;
+    color: #ff3333;
+    border: 2px solid #ff3333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: inherit;
+    transition: 0.3s;
 }
 
-.my-bookings-section h3 {
-  text-align: center;
-  color: #2b2420;
+.info-btn:hover {
+    background-color: #ff3333;
+    color: white;
+    box-shadow: 0 0 15px red;
 }
 
-.my-booking {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-  padding: 16px;
-  background: #ffffff;
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(43, 36, 32, 0.10);
+/* Делаем так, чтобы кнопка Читать и Инфо были одного размера */
+.read-btn, .info-btn {
+    margin: 0; 
+    padding: 10px 20px;
+    font-size: 16px;
+    box-sizing: border-box; 
+    display: inline-block;
+}
+/* Стили для таблицы с цветами */
+.dialog-table {
+    margin: 20px auto;            /* Центрируем таблицу на странице */
+    text-align: center;           /* Текст внутри таблицы по центру */
+    border-spacing: 15px 10px;    /* 15px отступ по бокам, 10px сверху/снизу */
+    font-size: 20px;
 }
 
-.my-booking p {
-  margin: 4px 0 0;
-  font-size: 14px;
-  color: #6b5d52;
+.dialog-table th {
+    font-size: 22px;
+    padding-bottom: 15px;         /* Отступ под заголовком */
+    color: white;                 /* Цвет заголовка */
 }
 
-.my-booking .status {
-  font-weight: bold;
-  color: #2f6b3a;
+.dialog-table td {
+    padding: 5px;                 /* Отступ внутри каждой ячейки */
+}
+.words {
+    position: fixed;         /* Прибиваем к экрану */
+    left: 20px;             /* Отступ от правого края */
+    top: 50%;                /* Ставим по центру экрана */
+    transform: translateY(-50%); /* Точное центрирование */
+    
+    background-color: #111;
+    border: 2px solid #ff3333;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    z-index: 100;
+    width: 150px;
 }
 
-.my-booking.past {
-  opacity: 0.55;
+.words h3 {
+    color: #ff3333;
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
 }
 
-.cancel-btn {
-  flex-shrink: 0;
-  padding: 8px 14px;
-  border: 1.5px solid #b3392f;
-  border-radius: 10px;
-  background: transparent;
-  color: #b3392f;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
+.dialogue {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: inherit;
+    font-size: 16px;
+    text-align: left;
 }
 
-.cancel-btn:hover {
-  background: #fdf1ee;
+.dialogue:hover {
+    background-color: #4b0c44;
+    border-color: #270909;
+    color: black;
+    font-weight: bold;
 }
+/* Кнопка для вызова меню цветов (висит в правом нижнем углу) */
+.color-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #111;
+    color: #ff3333;
+    border: 2px solid #ff3333;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000; /* Поверх всего текста */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.color-toggle-btn:hover {
+    background-color: #ff3333;
+    color: white;
+}
+
+/* Сама панель с цветами */
+.color-panel {
+    position: fixed;
+    bottom: 70px; /* Над кнопкой */
+    right: 20px;
+    background-color: #0a0a0a;
+    border: 2px solid #ff3333;
+    border-radius: 10px;
+    padding: 15px;
+    z-index: 999;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    
+    /* По умолчанию скрыто и чуть сдвинуто вниз для анимации */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+/* Класс, который делает панель видимой (его добавит JS) */
+.color-panel.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Настройки таблицы внутри панели (чтобы на телефоне было аккуратно) */
+.color-panel .dialog-table {
+    margin: 0;
+    font-size: 16px; /* Чуть меньше шрифт для мобилки */
+}
+/* --- СТИЛИ ДЛЯ ФОРМЫ ОТЗЫВОВ --- */
+.feedback-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    /* Используем переменные */
+    background-color: var(--card-bg); 
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    transition: 0.3s; /* Плавная смена темы */
+}
+
+.feedback-container h3 {
+    text-align: center;
+    color: var(--accent-color); /* Красный цвет, который меняется в зависимости от темы */
+    text-shadow: 0 0 10px var(--accent-color);
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* --- ЗВЕЗДЫ --- */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse; /* Звезды заполняются справа налево */
+    gap: 10px;
+    font-size: 45px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.star-rating span {
+    color: #888; /* Серый цвет для пустых звезд подходит и для светлой, и для темной темы */
+    transition: color 0.2s, transform 0.2s;
+}
+
+/* Золотой цвет для выбранных звезд (оставляем как есть) */
+.star-rating span:hover,
+.star-rating span:hover ~ span,
+.star-rating span.active,
+.star-rating span.active ~ span {
+    color: #ffcc00; 
+    text-shadow: 0 0 15px #ffcc00;
+}
+
+.star-rating span:hover {
+    transform: scale(1.2); /* Легкое увеличение при наведении */
+}
+
+/* --- ПОЛЯ ВВОДА --- */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    /* Текст подписи меняет цвет */
+    color: var(--text-color); 
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    /* В светлой теме фон станет светлым, в темной - темным */
+    background-color: var(--bg-color); 
+    color: var(--text-color);
+    border: 2px solid #555;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    box-sizing: border-box; 
+    transition: 0.3s;
+}
+
+/* Подсветка поля при клике на него */
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+.input-group textarea {
+    resize: vertical; /* Можно менять высоту только вниз */
+}
+
+/* --- КНОПКА --- */
+#submitBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+#submitBtn:hover {
+    background-color: #cc0000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+}
+
+/* Статус отправки */
+#formStatus {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+/* Обертка для карточек */
+.stories-grid {
+    display: flex !important;         /* Принудительно ставим в ряд */
+    flex-direction: row !important;   /* Запрещаем столбик */
+    flex-wrap: wrap !important;       /* Разрешаем перенос, если не влезают */
+    justify-content: center !important; /* Центрируем */
+    gap: 30px !important;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Сама карточка */
+.story-card {
+    width: 300px !important;          /* Жестко задаем ширину */
+    max-width: 300px !important;
+    display: block !important;
+    box-sizing: border-box;
+    background-color: #0a0a0a;
+    border: 2px solid #ff3333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Зеленая рамка для прочитанного */
+.story-card.read {
+    border-color: #00ff00 !important; 
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3) !important; 
+}
+
+/* Для телефонов (если экран меньше 768px) */
+@media (max-width: 768px) {
+    .stories-grid {
+        flex-direction: column !important; /* На телефоне падают вниз */
+        align-items: center !important;
+    }
+}
+/* --- СТИЛИ ДЛЯ ТАБЛИЦЫ-ПЕРЕПИСКИ --- */
+.chat-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto; /* Центрируем таблицу по середине */
+    border-collapse: collapse; /* Убираем двойные рамки */
+    background-color: #0a0a0a; /* Темный фон */
+    border: 2px solid #ff3333; /* Красная внешняя рамка */
+    border-radius: 10px; /* Скругляем углы */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); /* Свечение */
+    overflow: hidden; /* Чтобы углы таблицы были скруглены */
+}
+
+.chat-table td {
+    border: 1px solid #ff3333; /* Тонкие красные линии между ячейками */
+    padding: 15px;
+    vertical-align: top; /* Текст прижимается к верху ячейки */
+}
+
+/* Левая колонка (где фото) */
+.chat-photo {
+    width: 30%; /* Ширина колонки с фото */
+    text-align: center;
+    font-style: italic;
+    color: #888; /* Серый цвет для заглушки */
+    background-color: #111; /* Чуть светлее основного фона */
+}
+
+/* Правая колонка (где текст) */
+.chat-message {
+    width: 70%;
+}
+
+/* Имя персонажа */
+.chat-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px currentColor; /* Свечение в цвет имени */
+}
+
+/* Сам текст сообщения */
+.chat-text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: antiquewhite;
+}
+
+/* Для телефонов: если экран узкий, делаем таблицу в один столбец */
+@media (max-width: 600px) {
+    .chat-table, .chat-table tbody, .chat-table tr, .chat-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .chat-photo {
+        border-bottom: none; /* Убираем лишнюю линию на телефоне */
+    }
+}
+/* --- НОВЫЕ СТИЛИ ДЛЯ АВАТАРОК В ТАБЛИЦЕ --- */
+
+/* Настройка ячейки с фото */
+.chat-photo {
+    width: 120px; /* Ширина колонки с фото */
+    vertical-align: middle !important; /* Центрируем фото по высоте сообщения */
+    padding: 15px !important;
+    background-color: #0a0a0a; /* Темный фон */
+    text-align: center;
+}
+
+/* Сама фотография */
+.chat-photo img {
+    width: 150px;           /* Размер аватарки (можешь увеличить до 100px) */
+    height: 150px;          /* Высота (должна совпадать с шириной) */
+    object-fit: cover;     /* Чтобы фото не плющилось и не растягивалось */
+    border-radius: 50%;    /* Делает фото круглым */
+    border: 2px solid #ff3333; /* Красная рамка */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* Красное неоновое свечение */
+    transition: 0.3s;      /* Плавный эффект */
+}
+
+/* Эффект при наведении на аватарку (чуть увеличивается) */
+.chat-photo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 1);
+}
+/* --- СТИЛИ ДЛЯ ТЕКСТА ПЕСНИ --- */
+.song-lyrics {
+    max-width: 600px;          /* Ограничиваем ширину, чтобы текст не растягивался */
+    margin: 40px auto;         /* Центрируем блок на странице */
+    padding: 25px 35px;        /* Отступы внутри блока */
+    
+    background-color: #0a0a0a; /* Темный фон (чуть светлее основного) */
+    
+    /* Красивая красная полоса слева */
+    border-left: 4px solid #ff3333; 
+    border-radius: 0 15px 15px 0; /* Скругляем правые углы */
+    
+    /* Легкая тень вокруг */
+    box-shadow: 5px 5px 20px rgba(255, 0, 0, 0.15); 
+    
+    color: #ffcccc;            /* Нежно-розовый цвет текста (чтобы не сливалось с белым) */
+    font-size: 20px;
+    font-style: italic;        /* Курсив для текста песни */
+    line-height: 1.8;          /* Увеличиваем межстрочный интервал (легче читать) */
+    text-align: center;        /* Выравниваем по центру */
+    position: relative;
+}
+
+/* Добавляем большую декоративную кавычку на фоне */
+.song-lyrics::before {
+    content: '“';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 100px;
+    color: rgba(255, 51, 51, 0.1); /* Прозрачная красная кавычка */
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 600px) {
+    .song-lyrics {
+        margin: 20px 10px;     /* Уменьшаем отступы на телефоне */
+        padding: 15px 20px;
+        font-size: 18px;       /* Чуть уменьшаем шрифт */
+    }
+}
+/* --- КАРТОЧКА В ТЕКСТЕ --- */
+.photo-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0a0a0a;
+    border: 2px solid #ff3333;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 20px auto;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: 0.3s;
+    text-align: center;
+    width: fit-content;
+}
+
+.photo-card:hover {
+    background-color: #ff3333;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+    transform: translateY(-3px);
+}
+
+.camera-icon {
+    font-size: 24px;
+}
+
+/* --- ОКНО ГАЛЕРЕИ ВИКИ --- */
+.custom-gallery-modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 5000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95); /* Темный фон */
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Если фото много, можно будет прокручивать */
+}
+
+.gallery-title {
+    color: #ff3333;
+    text-shadow: 0 0 10px red;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+/* Кнопка закрытия */
+.close-gallery-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #ff3333;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-gallery-btn:hover {
+    color: white;
+    text-shadow: 0 0 15px red;
+}
+
+/* Сетка для фотографий Вики */
+.vika-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Автоматическая сетка */
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.vika-grid img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ff3333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.vika-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.9);
+}
+/* ========================================= */
+/* ГЛОБАЛЬНОЕ ИСПРАВЛЕНИЕ ЦВЕТОВ ДЛЯ ТЕМ */
+/* ========================================= */
+
+/* 1. Основной текст, заголовки и параграфы */
+/* 1. Основной текст, заголовки и параграфы */
+h1, h2, h3, h4, p, label, span, .white-text {
+    /* Убрали !important, чтобы цвета из HTML снова заработали */
+    color: var(--text-color); 
+}
+
+/* Исключение для красных заголовков (чтобы они оставались красными в любой теме) */
+h1, .cards-title, .chapter-sidebar h3 {
+    color: var(--accent-color) !important;
+}
+
+/* 2. Карточки (в рассказах и персонажах) */
+.story-card, .card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+}
+
+.story-card p, .card h3 {
+    color: var(--text-color) !important;
+}
+
+/* 3. Модальные окна (всплывающие окна с инфой) */
+.modal-content {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+}
+
+#modal-title {
+    color: var(--accent-color) !important;
+}
+
+#modal-desc {
+    color: var(--text-color) !important;
+}
+
+/* 4. Таблицы (цвета диалогов и переписки) */
+.dialog-table th {
+    color: var(--accent-color) !important; /* Заголовки таблиц всегда красные */
+}
+
+/* --- ФИКС ПАНЕЛИ ЦВЕТОВ --- */
+.color-panel {
+    /* Панель теперь будет менять фон (белый в светлой теме, черный в темной) */
+    background-color: var(--card-bg) !important;
+    border: 2px solid var(--border-color) !important;
+}
+
+.color-panel .dialog-table th {
+    color: var(--accent-color) !important;
+}
+
+/* Возвращаем цвета персонажам, которые заданы прямо в HTML (красный, желтый и т.д.) */
+.dialog-table td {
+    color: inherit; 
+}
+
+/* А для тех, у кого нет своего цвета (как "Левые чтолы"), делаем цвет текста темы */
+.color-panel .dialog-table td:not([style*="color"]) {
+    color: var(--text-color) !important;
+}
+
+/* Текст в переписке (чат) тоже должен меняться */
+.chat-text {
+    color: var(--text-color) !important;
+}
+.chat-name {
+    /* Оставляем цвета персонажей, они заданы инлайн */
+}
+
+/* 5. Кнопки (Информация, Назад, Вперед и т.д.) */
+.info-btn, .chapter-btn, .controls button {
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+    background-color: transparent;
+}
+
+.info-btn:hover, .chapter-btn:hover, .controls button:not(:disabled):hover {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+}
+
+/* Кнопка "Сменить тему" в меню */
+.theme-toggle-btn {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+}
+.theme-toggle-btn:hover {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+}
+
+/* 6. Кнопка "Цвета" */
+.color-toggle-btn {
+    background-color: var(--card-bg) !important;
+    color: var(--accent-color) !important;
+    border-color: var(--border-color) !important;
+}
+.color-toggle-btn:hover {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+}
+
+/* 7. Форма отзывов (поля ввода) */
+.input-group input, .input-group textarea {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* 8. Текст в карточках (Последний выстрел / Струны судьбы) */
+.story-card .read-btn {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+}
+
+/* 9. Меню (Сайдбар) */
+.sidebar {
+    background-color: var(--card-bg) !important;
+    border-right-color: var(--border-color) !important;
+}
+.sidebar a {
+    color: var(--text-color) !important;
+    text-shadow: none !important; /* Убираем размытие */
+}
+.sidebar a:hover {
+    color: var(--accent-color) !important;
+    text-shadow: 0 0 8px var(--accent-color) !important;
+}
+/* ФИКС ДЛЯ МЕНЮ ГЛАВ СПРАВА */
+.chapter-sidebar {
+    background-color: var(--card-bg) !important;
+    border: 2px solid var(--border-color) !important;
+}
+
+.chapter-sidebar h3 {
+    color: var(--accent-color) !important;
+}
+
+.chapter-btn {
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+/* Активная глава (чтобы текст был виден на красном фоне) */
+.chapter-btn.active {
+    background-color: var(--accent-color) !important;
+    color: white !important; 
+    border-color: var(--accent-color) !important;
+}
+
+/* При наведении */
+.chapter-btn:hover {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+}
+/* ========================================= */
+/* ФИКС ДЛЯ ТЕКСТА ЛУИ (И ДРУГИХ ЖЕЛТЫХ ТЕКСТОВ) */
+/* ========================================= */
+
+/* Находим любые элементы, у которых в style прописан желтый цвет */
+[style*="color: yellow;"], 
+[style*="color: yellow "] {
+    /* Добавляем плотную черную тень, чтобы текст читался на ЛЮБОМ фоне */
+    text-shadow: 
+        1px 1px 0px #000, 
+       -1px -1px 0px #000,  
+        1px -1px 0px #000,
+       -1px 1px 0px #000,
+        0 0 5px #000; /* Легкое черное свечение вокруг */
+    
+    /* Делаем шрифт чуть жирнее для лучшей читаемости */
+    font-weight: bold; 
+}
+[style*="color: aqua;"], 
+[style*="color: aqua "] {
+    /* Добавляем плотную черную тень, чтобы текст читался на ЛЮБОМ фоне */
+    text-shadow: 
+        1px 1px 0px #000, 
+       -1px -1px 0px #000,  
+        1px -1px 0px #000,
+       -1px 1px 0px #000,
+        0 0 5px #000; /* Легкое черное свечение вокруг */
+    
+    /* Делаем шрифт чуть жирнее для лучшей читаемости */
+    font-weight: bold; 
+}
+
+        /* Временные стили для кабинета (в тон сайту) */
+        .account-container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 20px;
+            color: var(--text-color);
+        }
+        .auth-box, .user-box, .admin-box {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+        }
+        .hidden { display: none !important; }
+        
+        /* Стили чата */
+        .chat-box {
+            height: 300px;
+            overflow-y: auto;
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .msg { margin-bottom: 10px; padding: 10px; border-radius: 10px; max-width: 80%; }
+        .msg.user { background: #333; margin-left: auto; text-align: right; }
+        .msg.admin { background: var(--accent-color); color: white; margin-right: auto; }
+        
+        input, button { padding: 10px; border-radius: 5px; font-family: inherit; }
+        input { width: 100%; box-sizing: border-box; margin-bottom: 10px; background: #111; color: white; border: 1px solid #ff3333; }
+        button { background: #ff3333; color: white; border: none; cursor: pointer; font-weight: bold; }
+        button:hover { background: #cc0000; }
+  

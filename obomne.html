@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/png" href="icon.png">
+    <title> Об авторе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="overflow-x: hidden;">
+    <!-- 1. Скрытый чтокбокс (переключатель) -->
+    <input type="checkbox" id="menu-toggle">
+    <!-- 2. Кнопка (гамбургер), которая открывает меню -->
+    <label for="menu-toggle" class="menu-btn">☰</label>
+<!-- 3. Само выезжающее меню -->
+    <nav class="sidebar">
+        <label for="menu-toggle" class="close-btn">✕</label> <!-- Кнопка закрытия -->
+        <a href="index.html">Главная</a>
+        <a href="#">Рассказы</a>
+        <a href="personaji.html">Персонажи</a>
+        <a href="#" onclick="alert('Вы уже находитесь тут'); return false;">Обо мне</a>
+        <label for="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()">🌓 Сменить тему</label>
+    </nav>
+<div class="header-group">
+    <h1>About the autor</h1>
+    <h1 style="font-size: 25px; margin-top: -5%; font-family: 'Times New Roman', Times, serif;">Опытные программисты найдитесь пожалуйста...</h1>
+   <!-- Пример: добавляем onclick и style="cursor: pointer;" -->
+    <div class="gallery-wrapper">
+
+    <!-- Блок для фотографий (они будут в ряд) -->
+    <div class="photo-row" >
+        <img src="ya1.jpg" class="gallery-img" onclick="openGallery()" style="cursor: pointer;">
+        <img src="ya2.jpg" class="gallery-img"> <!-- Сюда вставь вторую фотку -->
+        <img src="ya3.jpg" class="gallery-img">
+        <img src="ya4.jpg" class="gallery-img">
+        <img src="ya5.jpg" class="gallery-img"> <!-- И третью -->
+    </div>
+<!-- ТЕСТОВЫЙ БЛОК -->
+<div style="display: flex; flex-direction: row; align-items: flex-start; gap: -10px; padding-left: -40pЕx; padding-right: -10%; margin-top: 50px;">
+  
+    <div style="color: antiquewhite; font-size: 20px; line-height: 1.5;">
+        <p>И снова привет. Если ты ТУТ, в этой вкладке, значит тебе всё-таки интересно что это за сайт. Корочто поясняю историю...</p>
+        <p>Всё началось в 2018 году. Тогда подруга показала мне игру «Gacha Life». Я создавала там так много персонажей, что уже и не вспомню, какая ОС была первой. Потом появился «Gacha Club». Я ещё долго не переходила на него, но, когда всё-таки перешла, была в шоке: интерфейс был похожим, но вещей и поз стало намного больше. Там я провела около трёх лет.
+
+В 2024 году я перешла в «Gacha 2». В течение года снимала видео для TikTok и YouTube. На YouTube набрать популярность сложно, зато в TikTok мои видео иногда набирали много просмотров. По крайней мере, так было до определённого времени. Потом активность упала, и я забросила это занятие. Но, поскольку я с детства люблю фантазировать, совсем успокоиться не могла: в голове появлялось слишком много сюжетов.
+
+Я пыталась создавать видео, которые не набирали просмотров, и писала рассказы в телеграм-канале, которые почти никто не читал. В конце концов я сдалась и направила всю энергию на учёбу. Недавно я пообщалась с одногруппницей и подумала, что стоит попробовать совместить «работу» и хобби. Так я и пришла к идее создать этот сайт.
+
+Надеюсь, после публикации в TikTok сайт наберёт хотя бы немного популярности, потому что в будущем я хочу его развивать. (Он красивый получился!)
+        </p>
+    </div>
+
+</div>
+
+
+<footer>
+    <div style="text-align: center;">
+    <p>Мои соцсети:</p>
+    <div class="socseti" style="margin-left: 10%;">
+    <a href="https://t.me/destaUuU">Телеграм-канал (Для связи со мной):DestaUuU</a>  <p style="margin-right: 18%;";>Можете написать мне в личные сообщения, оставить комментарий под постом или отзыв на главной странице.</p> <a href="https://www.tiktok.com/@deess377?_r=1&_t=ZS-9B4NFG6va6i">TikTok (на всякий случай): deess377</a>
+</div>
+</div>
+</footer>
+
+
+
+<script src="obomne.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>
